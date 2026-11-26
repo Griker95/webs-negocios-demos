@@ -1,26 +1,33 @@
 <!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Talleres Ribera · Zaragoza</title><meta name='description' content='Talleres Ribera repara y mantiene tu coche con presupuesto cerrado y sin sorpresas. Llámanos o escríbenos y te damos hora.'><meta name='robots' content='noindex,nofollow'><style>
 *{box-sizing:border-box}
-:root{--acento:#c2571a;--tinta:#16181d;--txt:#2b2f36;--gris:#6a707c;--linea:#e6e8ec;--papel:#fbfaf8;--card:#fff}
+:root{--acento:#b34f17;--tinta:#16181d;--txt:#2b2f36;--gris:#5d646f;--linea:#e6e8ec;--papel:#fbfaf8;--card:#fff}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--txt);background:var(--papel);line-height:1.6}
 .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
 .aviso{background:#fff7d6;color:#5c4a00;font-size:13.5px;text-align:center;padding:8px 16px;border-bottom:1px solid #ecdfa6}
 nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.95);border-bottom:1px solid var(--linea)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px}
-nav .marca{font-weight:700;color:var(--tinta);text-decoration:none;font-size:17px}
+nav .marca{font-weight:700;color:var(--tinta);text-decoration:none;font-size:17px;padding:10px 0}
 .btn{display:inline-block;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--acento);color:var(--acento);background:transparent}
 .btn.pri{background:var(--acento);color:#fff}
 .btn:hover{filter:brightness(.93)}
+a:focus-visible{outline:3px solid #ffbf47;outline-offset:2px}
+.salto{position:absolute;left:-999px}.salto:focus{left:8px;top:8px;z-index:9;background:#fff;color:var(--tinta);padding:8px 12px;border-radius:6px}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px}
+.galeria figure{margin:0}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--linea);background:var(--linea)}
+.galeria figcaption{font-size:13.5px;color:var(--gris);margin-top:6px}
 header{background:linear-gradient(135deg,var(--acento),var(--tinta) 140%);color:#fff;padding:72px 0 64px}
-header .sector{text-transform:uppercase;letter-spacing:.12em;font-size:12.5px;font-weight:600;opacity:.85}
+header .sector{text-transform:uppercase;letter-spacing:.12em;font-size:13px;font-weight:600}
 header h1{font-size:clamp(30px,5.2vw,46px);line-height:1.12;margin:10px 0 14px;letter-spacing:-.02em;max-width:720px;text-wrap:balance}
-header p{font-size:18px;max-width:600px;margin:0 0 26px;opacity:.94}
+header p{font-size:18px;max-width:600px;margin:0 0 26px}
+header.foto{background:linear-gradient(rgba(10,12,16,.62),rgba(10,12,16,.72)),var(--portada) center/cover no-repeat}
 header .acciones{display:flex;flex-wrap:wrap;gap:10px}
 header .btn{border-color:rgba(255,255,255,.6);color:#fff}
 header .btn.pri{background:#fff;color:var(--tinta);border-color:#fff}
 section{padding:56px 0}
 section+section{border-top:1px solid var(--linea)}
-h2{font-size:26px;color:var(--tinta);margin:0 0 22px;letter-spacing:-.01em}
+h2,h1.t{font-size:26px;color:var(--tinta);margin:0 0 22px;letter-spacing:-.01em;line-height:1.25}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:14px}
 .card{background:var(--card);border:1px solid var(--linea);border-radius:12px;padding:20px}
 .card h3{margin:0 0 6px;font-size:17px;color:var(--tinta)}
@@ -36,10 +43,10 @@ blockquote p{margin:0 0 8px}
 blockquote cite{font-style:normal;color:var(--gris);font-size:14px}
 .contacto{background:var(--tinta);color:#fff;border-top:0}
 .contacto h2{color:#fff}
-.contacto p{margin:0 0 20px;opacity:.85;max-width:520px}
+.contacto p{margin:0 0 20px;color:#d8dbe0;max-width:520px}
 .contacto .acciones{display:flex;flex-wrap:wrap;gap:10px}
 .contacto .btn{border-color:rgba(255,255,255,.5);color:#fff}
 .contacto .btn.pri{background:#fff;color:var(--tinta);border-color:#fff}
 footer{padding:22px 0;font-size:13px;color:var(--gris);text-align:center}
 @media(max-width:700px){.dos{grid-template-columns:1fr}header{padding:52px 0 46px}nav .btn{padding:8px 12px;font-size:14px}}
-</style></head><body><div class='aviso'>Web de demostración. El negocio, las reseñas y los precios son inventados.</div><nav><div class='wrap'><a class='marca' href='#'>Talleres Ribera</a><a class='btn pri' href='https://wa.me/34600000002'>WhatsApp</a></div></nav><header><div class='wrap'><div class='sector'>Mecánica general y pre-ITV</div><h1>Taller mecánico en Zaragoza: presupuesto antes de tocar nada</h1><p>Talleres Ribera repara y mantiene tu coche con presupuesto cerrado y sin sorpresas. Llámanos o escríbenos y te damos hora.</p><div class='acciones'><a class='btn pri' href='https://wa.me/34600000002'>WhatsApp</a><a class='btn' href='tel:+34600000002'>Llamar 600 000 002</a><a class='btn' href='https://www.google.com/maps/search/?api=1&query=Talleres+Ribera+Pol%C3%ADgono+de+la+Demo%2C+nave+7%2C+Zaragoza' target='_blank' rel='noopener'>Cómo llegar</a></div></div></header><main><section id='servicios'><div class='wrap'><h2>Servicios</h2><div class='grid'><div class='card'><h3>Revisión y cambio de aceite</h3><p>Aceite, filtros y 20 puntos de control.</p><span class='precio'>Desde 79 €</span></div><div class='card'><h3>Pre-ITV</h3><p>Si no pasa, te decimos qué falla y cuánto cuesta.</p><span class='precio'>25 €</span></div><div class='card'><h3>Frenos</h3><p>Pastillas y discos, con piezas de primera marca.</p><span class='precio'>Presupuesto en el día</span></div><div class='card'><h3>Diagnosis</h3><p>Lectura de averías y explicación sin jerga.</p><span class='precio'>30 €</span></div></div></div></section><section id='donde'><div class='wrap'><div class='dos'><div><h2>Horario</h2><table><tr><td>Lunes a viernes</td><td>8:00 – 13:30 · 15:30 – 19:00</td></tr><tr><td>Sábado y domingo</td><td>Cerrado</td></tr></table></div><div class='donde'><h2>Dónde estamos</h2><p>Polígono de la Demo, nave 7, Zaragoza</p><a class='btn' href='https://www.google.com/maps/search/?api=1&query=Talleres+Ribera+Pol%C3%ADgono+de+la+Demo%2C+nave+7%2C+Zaragoza' target='_blank' rel='noopener'>Cómo llegar</a></div></div></div></section><section id='resenas'><div class='wrap'><h2>Lo que dicen los clientes</h2><div class='grid'><blockquote><p>Me llamaron antes de cambiar una pieza que no estaba en el presupuesto. Así da gusto.</p><cite>Marta (reseña de ejemplo)</cite></blockquote></div></div></section><section class='contacto' id='contacto'><div class='wrap'><h2>Contacto</h2><p>Mándanos la matrícula y lo que le notas al coche por WhatsApp y te damos hora.</p><div class='acciones'><a class='btn pri' href='https://wa.me/34600000002'>WhatsApp</a><a class='btn' href='tel:+34600000002'>Llamar 600 000 002</a><a class='btn' href='mailto:hola@talleresribera.example'>hola@talleresribera.example</a></div></div></section></main><footer><div class='wrap'>© Talleres Ribera</div></footer></body></html>
+</style></head><body><a class='salto' href='#contenido'>Saltar al contenido</a><div class='aviso'>Web de demostración. El negocio, las reseñas y los precios son inventados.</div><nav aria-label='Principal'><div class='wrap'><a class='marca' href='#'>Talleres Ribera</a><a class='btn pri' href='https://wa.me/34600000002'>WhatsApp</a></div></nav><header><div class='wrap'><div class='sector'>Mecánica general y pre-ITV</div><h1>Taller mecánico en Zaragoza: presupuesto antes de tocar nada</h1><p>Talleres Ribera repara y mantiene tu coche con presupuesto cerrado y sin sorpresas. Llámanos o escríbenos y te damos hora.</p><div class='acciones'><a class='btn pri' href='https://wa.me/34600000002'>WhatsApp</a><a class='btn' href='tel:+34600000002'>Llamar 600 000 002</a><a class='btn' href='https://www.google.com/maps/search/?api=1&query=Talleres+Ribera+Pol%C3%ADgono+de+la+Demo%2C+nave+7%2C+Zaragoza' target='_blank' rel='noopener'>Cómo llegar</a></div></div></header><main id='contenido'><section id='servicios'><div class='wrap'><h2>Servicios</h2><div class='grid'><div class='card'><h3>Revisión y cambio de aceite</h3><p>Aceite, filtros y 20 puntos de control.</p><span class='precio'>Desde 79 €</span></div><div class='card'><h3>Pre-ITV</h3><p>Si no pasa, te decimos qué falla y cuánto cuesta.</p><span class='precio'>25 €</span></div><div class='card'><h3>Frenos</h3><p>Pastillas y discos, con piezas de primera marca.</p><span class='precio'>Presupuesto en el día</span></div><div class='card'><h3>Diagnosis</h3><p>Lectura de averías y explicación sin jerga.</p><span class='precio'>30 €</span></div></div></div></section><section id='donde'><div class='wrap'><div class='dos'><div><h2>Horario</h2><table><tr><td>Lunes a viernes</td><td>8:00 – 13:30 · 15:30 – 19:00</td></tr><tr><td>Sábado y domingo</td><td>Cerrado</td></tr></table></div><div class='donde'><h2>Dónde estamos</h2><p>Polígono de la Demo, nave 7, Zaragoza</p><a class='btn' href='https://www.google.com/maps/search/?api=1&query=Talleres+Ribera+Pol%C3%ADgono+de+la+Demo%2C+nave+7%2C+Zaragoza' target='_blank' rel='noopener'>Cómo llegar</a></div></div></div></section><section id='resenas'><div class='wrap'><h2>Lo que dicen los clientes</h2><div class='grid'><blockquote><p>Me llamaron antes de cambiar una pieza que no estaba en el presupuesto. Así da gusto.</p><cite>Marta (reseña de ejemplo)</cite></blockquote></div></div></section><section class='contacto' id='contacto'><div class='wrap'><h2>Contacto</h2><p>Mándanos la matrícula y lo que le notas al coche por WhatsApp y te damos hora.</p><div class='acciones'><a class='btn pri' href='https://wa.me/34600000002'>WhatsApp</a><a class='btn' href='tel:+34600000002'>Llamar 600 000 002</a><a class='btn' href='mailto:hola@talleresribera.example'>hola@talleresribera.example</a></div></div></section></main><footer><div class='wrap'>© Talleres Ribera</div></footer></body></html>
