@@ -29,6 +29,12 @@ header h1{font-size:clamp(30px,5.2vw,46px);line-height:1.12;margin:10px 0 14px;l
 header p{font-size:18px;max-width:600px;margin:0 0 26px}
 header.foto{background:linear-gradient(rgba(10,12,16,.62),rgba(10,12,16,.72)),var(--portada) center/cover no-repeat}
 header .acciones{display:flex;flex-wrap:wrap;gap:10px}
+.e-claro header:not(.foto){background:var(--papel);color:var(--tinta);border-bottom:1px solid var(--linea)}
+.e-claro header:not(.foto) .sector{color:var(--acento)}
+.e-claro header:not(.foto) p{color:var(--txt)}
+.e-claro header:not(.foto) .btn{border-color:var(--acento);color:var(--acento)}
+.e-claro header:not(.foto) .btn.pri{background:var(--acento);color:#fff;border-color:var(--acento)}
+.e-sobrio header:not(.foto){background:var(--tinta);border-bottom:5px solid var(--acento)}
 header .btn{border-color:rgba(255,255,255,.6);color:#fff}
 header .btn.pri{background:#fff;color:var(--tinta);border-color:#fff}
 section{padding:56px 0}
