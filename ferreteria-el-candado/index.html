@@ -7,6 +7,12 @@ body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-s
 .aviso{background:#fff7d6;color:#5c4a00;font-size:13.5px;text-align:center;padding:8px 16px;border-bottom:1px solid #ecdfa6}
 nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.95);border-bottom:1px solid var(--linea)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px}
+.menu{display:flex;gap:2px;flex:1;min-width:0;overflow-x:auto;margin:0 6px}
+.menu a{padding:10px;white-space:nowrap;color:var(--txt);text-decoration:none;font-size:15px;border-radius:6px}
+.menu a:hover{background:var(--linea)}
+.menu a[aria-current]{color:var(--acento);font-weight:700}
+header.corta{padding:44px 0 38px}header.corta h1{margin:0 0 8px}header.corta p{margin:0}
+.texto{max-width:760px}.texto p{margin:0 0 14px}
 nav .marca{font-weight:700;color:var(--tinta);text-decoration:none;font-size:17px;padding:10px 0}
 .btn{display:inline-block;padding:11px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--acento);color:var(--acento);background:transparent}
 .btn.pri{background:var(--acento);color:#fff}
@@ -52,5 +58,5 @@ details p{margin:0 0 16px;color:var(--txt)}
 .contacto .btn{border-color:rgba(255,255,255,.5);color:#fff}
 .contacto .btn.pri{background:#fff;color:var(--tinta);border-color:#fff}
 footer{padding:22px 0;font-size:13px;color:var(--gris);text-align:center}
-@media(max-width:700px){.dos{grid-template-columns:1fr}header{padding:52px 0 46px}nav .btn{padding:8px 12px;font-size:14px}}
+@media(max-width:700px){nav .wrap{flex-wrap:wrap}.menu{order:3;flex-basis:100%;margin:0 -10px 6px}.dos{grid-template-columns:1fr}header{padding:52px 0 46px}nav .btn{padding:8px 12px;font-size:14px}}
 </style></head><body><a class='salto' href='#contenido'>Saltar al contenido</a><div class='aviso'>Web de demostración. El negocio, las reseñas y los precios son inventados.</div><nav aria-label='Principal'><div class='wrap'><a class='marca' href='#'>Ferretería El Candado</a><a class='btn pri' href='tel:+34600000008'>Llamar 600 000 008</a></div></nav><header><div class='wrap'><div class='sector'>Ferretería y cerrajería</div><h1>Tu ferretería en Albacete</h1><p>Ferretería El Candado: herramientas, copias de llaves y lo que haga falta para el arreglo. Pregunta por teléfono o por WhatsApp si lo tenemos.</p><div class='acciones'><a class='btn pri' href='tel:+34600000008'>Llamar 600 000 008</a><a class='btn' href='https://www.google.com/maps/search/?api=1&query=Ferreter%C3%ADa+El+Candado+Calle+de+la+Demo+5%2C+Albacete' target='_blank' rel='noopener'>Cómo llegar</a></div></div></header><main id='contenido'><section id='servicios'><div class='wrap'><h2>Servicios</h2><div class='grid'><div class='card'><h3>Ferretería</h3><p>Tornillería, herramientas y menaje.</p></div><div class='card'><h3>Copia de llaves</h3><p>Llaves y mandos, en el momento.</p></div><div class='card'><h3>Electricidad y fontanería</h3><p>Material y consejo para el arreglo.</p></div><div class='card'><h3>Pintura</h3><p>Pinturas, barnices y útiles.</p></div></div></div></section><section id='donde'><div class='wrap'><div class='dos'><div><h2>Horario</h2><table><tr><td>Lunes a viernes</td><td>9:00 – 13:30 y 16:30 – 20:00</td></tr><tr><td>Sábado</td><td>9:30 – 13:30</td></tr></table></div><div class='donde'><h2>Dónde estamos</h2><p>Calle de la Demo 5, Albacete</p><a class='btn' href='https://www.google.com/maps/search/?api=1&query=Ferreter%C3%ADa+El+Candado+Calle+de+la+Demo+5%2C+Albacete' target='_blank' rel='noopener'>Cómo llegar</a></div></div></div></section><section class='contacto' id='contacto'><div class='wrap'><h2>Contacto</h2><p>Escríbenos o llámanos y te respondemos en el día.</p><div class='acciones'><a class='btn pri' href='tel:+34600000008'>Llamar 600 000 008</a></div></div></section></main><footer><div class='wrap'>© Ferretería El Candado</div></footer></body></html>
